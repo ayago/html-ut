@@ -1,0 +1,26 @@
+{
+  "name": "html-ut",
+  "version": "1.0.0",
+  "description": "An npm package that contains utility functions to assert HTML strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayago/html-ut.git"
+  },
+  "keywords": [
+    "unit testing",
+    "html"
+  ],
+  "author": "Adrian Yago",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayago/html-ut/issues"
+  },
+  "homepage": "https://github.com/ayago/html-ut#readme",
+  "devDependencies": {
+    "jasmine": "^5.1.0"
+  }
+}
