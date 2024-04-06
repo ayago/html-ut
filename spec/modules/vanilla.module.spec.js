@@ -1,4 +1,4 @@
-const minifyHTML = require('../index');
+import { minifyHTML } from '../../index.js';
 
 describe('Minify HTML', function(){
     it('can work on html with spaces in between tags', function(){

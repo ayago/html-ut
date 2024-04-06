@@ -1,5 +1,3 @@
-function minifyHTML(html){
-    return html.replace(/>( |\n|\t)*</g, '><').trim();
-}
+import { minifyHTML } from './modules/vanilla.module.js';
 
-module.exports = minifyHTML;
+export { minifyHTML };
