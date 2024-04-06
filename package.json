@@ -2,10 +2,14 @@
   "name": "html-ut",
   "version": "2.0.0",
   "description": "An npm package that contains utility functions to assert HTML strings",
-  "module": "index.js",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./dist/index.cjs"
+  },
   "type": "module",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "preinstall": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,8 @@
   },
   "homepage": "https://github.com/ayago/html-ut#readme",
   "devDependencies": {
+    "esbuild": "0.20.2",
+    "esbuild-plugin-clean": "^1.0.1",
     "jasmine": "^5.1.0"
   }
 }
