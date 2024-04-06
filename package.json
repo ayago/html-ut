@@ -1,6 +1,6 @@
 {
   "name": "html-ut",
-  "version": "1.0.0",
+  "version": "1.0.`",
   "description": "An npm package that contains utility functions to assert HTML strings",
   "main": "index.js",
   "scripts": {
