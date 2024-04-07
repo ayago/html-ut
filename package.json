@@ -1,15 +1,16 @@
 {
   "name": "html-ut",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "An npm package that contains utility functions to assert HTML strings",
   "exports": {
     "import": "./src/index.js",
     "require": "./dist/index.cjs"
   },
   "type": "module",
+  "types": "src/index.d.ts",
   "scripts": {
     "test": "jasmine",
-    "preinstall": "node build.js"
+    "preinstall": "node build.js && tsc"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "esbuild": "0.20.2",
     "esbuild-plugin-clean": "^1.0.1",
-    "jasmine": "^5.1.0"
+    "jasmine": "^5.1.0",
+    "typescript": "^5.4.4"
   }
 }
